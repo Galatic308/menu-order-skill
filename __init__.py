@@ -19,7 +19,7 @@ class MenuOrder(MycroftSkill):
         self.speak_dialog('one chicken sandwich coming right up')
         
      def order_food(self, message):
-         self.message_intent('i would like a pizza sandwich')
+         self.message_intent('i would like pizza')
          self.speak_dialog('im sorry we dont have pizza on the menu')
         
     @intent_file_handler('order.menu.intent')
