@@ -13,7 +13,6 @@ class MenuOrder(MycroftSkill):
     def order_food(self, message):
         self.speak_dialog('welcome to cyber food may i take your order')
         
-    def order_food(self, message):
     if message == order_food:
         self.message_intent('i would like a burger')
         self.speak_dialog('one burger coming right up')
@@ -30,7 +29,6 @@ class MenuOrder(MycroftSkill):
     def order_side(self, message):
         self.speak_dialog('what would you like for a side')
         
-     def order_side(self, message):
         if message == order_side:
          self.message_intent('i would like some french fries')
          self.speak_dialog('french fires coming right')
@@ -42,8 +40,6 @@ class MenuOrder(MycroftSkill):
     def order_drink(self, message):
         self.speak_dialog('what would you like to drink')
         
-    @intent_file_handler('order.menu.intent')
-    def order_drink(self, message):
     
         if message == order_drink:
         self.message_intent('i would like a coke')
