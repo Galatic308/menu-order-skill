@@ -11,6 +11,9 @@ class MenuOrder(MycroftSkill):
         
     @intent_file_handler('order.menu.intent')
     def order_food(self, message):
+        self.speak_dialog('welcome to cyber food may i take your order')
+        
+    def order_food(self, message):
     if message > order_food:
         self.message_intent('i would like a burger')
         self.speak_dialog('one burger coming right up')
