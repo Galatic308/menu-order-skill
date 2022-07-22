@@ -11,14 +11,15 @@ class MenuOrder(MycroftSkill):
         
     @intent_file_handler('order.menu.intent')
     def order_food(self, message):
+    if message > order_food:
         self.message_intent('i would like a burger')
         self.speak_dialog('one burger coming right up')
     
-    def order_food(self, message):
+    if message > order_food:
         self.message_intent('i would like a chicken sandwich')
         self.speak_dialog('one chicken sandwich coming right up')
         
-     def order_food(self, message):
+     if message < order_food:
          self.message_intent('i would like pizza')
          self.speak_dialog('im sorry we dont have pizza on the menu')
         
