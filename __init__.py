@@ -69,10 +69,10 @@ class MenuOrder(MycroftSkill):
     def confirm_your_order(self, message):
         self.message_intent('i would like to confirm my order')
         self.speak_dialog('would you like to confirm your order')
-        if(no>yes):
+        if message < confirm_your_order:
             self.message_intent('no')
             self.speak_dialog('alright take your time')
-        if(no<yes):
+        if message > confirm_your_order:
             self.message_intent('yes')
             self.speak_dialog('your order has been confirmed enjoy your meal')
 
